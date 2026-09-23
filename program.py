@@ -1,52 +1,21 @@
-topics = [
-   "Computer systems", 
-   "Data representation", 
-   "Images", 
-   "Sound", 
-   "Programming fundamentals", 
-   "Making robust programs", 
-   "IDEs and programming languages logic"
-   ]
+# Import functions
 
-questions = [
-   [
-      [ "What is the function of RAM?" , [ "To store the cpu status" , "To store the device firmware" , "To store the temporary data of active programs" , "To load software from the CPU into secondary storage" ], 3]
-      ["What does MDR stand for?", [ "Memory Data Read" , "Memory Data Registar" , "Memory Done Read" , "Memory Dump Registar" ], 2]
-   ],
-   [],
-   [],
-   [],
-   [],
-   [],
-   []
-]
+import messages
+from topicSelector import selectTopic
+from generateQuestions import generate
 
-loadedQuestions = []
+# Backend
 
-def printLoadingPercent(percent):
-   print(f"{percent}%")
- 
+selectedTopic = None
 
-def generateQuestions(topicId):
-   
-   
- 
+# Main program script
 
-def select_topic():
-   print("#----------------------------#")
-   print()
-   print("Select a topic.")
-   print()
-   
-   indexId = 1
-   
-   for i in topics:
-      print(f"({indexId}) {i}")
-      indexId = indexId + 1
-   
-   print()
-   topicSelected = int(input(f"Please select your desired topic (1 - {indexId}): "))
-      
-select_topic()
+messages.welcomeMes()
+selectedTopic = selectTopic()
 
-generateQuestions(1)
+questions = generate(selectedTopic)
+
+print(questions)
+
+
+
