@@ -30,7 +30,7 @@ def selectTopic() :
         
         try:
 
-            topic = int(input("~ ")) - 1
+            topic = int(input("> ")) - 1
 
             verify = verifyInput(topic)
 

@@ -3,7 +3,7 @@ import random
 
 def generate(topicId):
 
-    questionsToGen = 2
+    questionsToGen = 3
     currentQuestionCount = 0
 
     questionList = questions[topicId]
