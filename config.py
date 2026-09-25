@@ -1,0 +1,1 @@
+questionsPerRound = 3

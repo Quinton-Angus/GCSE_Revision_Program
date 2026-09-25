@@ -1,3 +1,5 @@
+from config import questionsPerRound
+
 def round(questions):
 
     Qnum = 1
@@ -33,7 +35,7 @@ def round(questions):
     print()
     print("#-------------------------------------------#")
     print()
-    print(f"Results compiled, round score {score}/3")
+    print(f"Results compiled, round score {score}/{questionsPerRound}")
     print("what would you like to do next?")
     print()
     print("[1] Exit program")

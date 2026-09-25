@@ -6,3 +6,8 @@ def welcomeMes():
 
 def invalidTopic():
     print("Invalid topic, please try again!")
+
+def startingRound():
+    print("Starting round...")
+    print()
+    print("#-------------------------------------------#")

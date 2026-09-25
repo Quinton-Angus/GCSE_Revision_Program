@@ -1,9 +1,10 @@
 from questions import questions
 import random
+from config import questionsPerRound
 
 def generate(topicId):
 
-    questionsToGen = 3
+    questionsToGen = questionsPerRound
     currentQuestionCount = 0
 
     questionList = questions[topicId]

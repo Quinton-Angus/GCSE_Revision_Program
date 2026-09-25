@@ -14,6 +14,7 @@ selectedTopic = None
 def runRound():
     selectedTopic = selectTopic()
     questions = generate(selectedTopic)
+    messages.startingRound()
     round(questions)
 
 # Main program script
