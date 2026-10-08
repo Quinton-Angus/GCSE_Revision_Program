@@ -1,4 +1,4 @@
-from questions import questions
+from data import questions
 import random
 from config import questionsPerRound
 

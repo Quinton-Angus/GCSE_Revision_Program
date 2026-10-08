@@ -1,5 +1,7 @@
-from topicData import topics
-from messages import invalidTopic
+from data import topics
+
+def invalidTopic():
+    print("Invalid topic, please try again!")
 
 def printTopics():
 

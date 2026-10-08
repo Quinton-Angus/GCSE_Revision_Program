@@ -1,26 +1,27 @@
 # Import functions
 
-import messages
-from topicSelector import selectTopic
-from generateQuestions import generate
-from round import round
+import functionsHub
 
-# Backend
+print(functionsHub)
+
+## Backend ##
 
 selectedTopic = None
 
-# Functions
+## Main program script ##
 
-def runRound():
-    selectedTopic = selectTopic()
-    questions = generate(selectedTopic)
-    messages.startingRound()
-    round(questions)
+print()
+print("Welcome, what are you going to revise today?")
+print()
+print("#-------------------------------------------#")
 
-# Main program script
+# Select initial topic
 
-messages.welcomeMes()
-runRound()
+functionsHub.newRound(functionsHub.selectTopic())
+
+
+
+
 
 
 

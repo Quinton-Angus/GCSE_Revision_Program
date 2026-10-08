@@ -1,6 +1,11 @@
 from config import questionsPerRound
+import functionsHub
 
 def round(questions):
+
+    print("Starting round...")
+    print()
+    print("#-------------------------------------------#")
 
     Qnum = 1
 
@@ -40,9 +45,12 @@ def round(questions):
     print()
     print("[1] Exit program")
     print("[2] Start new round")
-    print("[3] null")
+    print("[3] Back to home")
+    print()
 
     selectTrue = True
+
+    selected = None
 
     while selectTrue:
 
@@ -55,3 +63,11 @@ def round(questions):
         except ValueError:
 
             print("Please enter a valid option!")
+
+    if selected == 1:
+        functionsHub.exit()
+    elif selected == 2:
+        functionsHub.newRound(functionsHub.selectTopic())
+    elif selected == 3:
+        functionsHub.restart()
+    
