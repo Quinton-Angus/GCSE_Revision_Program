@@ -1,6 +1,5 @@
 ## IMPORTS ##
 
-import program
 import generateQuestions
 import round
 import topicSelector

@@ -70,4 +70,8 @@ def round(questions):
         functionsHub.newRound(functionsHub.selectTopic())
     elif selected == 3:
         functionsHub.restart()
+
+    print()
+    print("#-------------------------------------------#")
+    print()
     
