@@ -6,15 +6,6 @@ import topicSelector
 
 ## IMPORTS ##
 
-
-# Restart program
-
-def restart():
-    print()
-    print("Welcome, what are you going to revise today?")
-    print()
-    print("#-------------------------------------------#")
-
 # start new round
 
 def newRound(topic):
@@ -31,3 +22,13 @@ def exit():
 
 def selectTopic():
     return topicSelector.selectTopic()
+
+# Restart program
+
+def restart():
+    print()
+    print("Welcome, what are you going to revise today?")
+    print()
+    print("#-------------------------------------------#")
+    
+    newRound(selectTopic())

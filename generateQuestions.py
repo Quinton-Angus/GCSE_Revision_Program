@@ -1,6 +1,7 @@
 from data import questions
 import random
 from config import questionsPerRound
+import copy
 
 def generate(topicId):
 
@@ -13,7 +14,7 @@ def generate(topicId):
 
     questionList = questions[topicId]
 
-    avaliableQuestions = questionList.copy.deepcopy()
+    avaliableQuestions = copy.deepcopy(questionList)
 
 
     print(f"Avaliable questions: [{questionList}]")
@@ -27,7 +28,7 @@ def generate(topicId):
 
         generatedQuestions.append(questionInfo)
 
-        questionList.pop(randomQuestionNumber)
+        avaliableQuestions.pop(randomQuestionNumber)
 
         currentQuestionCount += 1
 
