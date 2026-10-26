@@ -1,1 +1,3 @@
-questionsPerRound = 3
+questionsPerRound = 2
+debug = True
+selectedTopic = None

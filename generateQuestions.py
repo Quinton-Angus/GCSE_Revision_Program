@@ -1,23 +1,18 @@
 from data import questions
 import random
-from config import questionsPerRound
+import config
 import copy
 
-def generate(topicId):
+def generate():
 
-    print()
-    print(f"Generating questions for topic id: [{topicId}]")
-    print()
+    topicId = config.selectedTopic
 
-    questionsToGen = questionsPerRound
+    questionsToGen = config.questionsPerRound
     currentQuestionCount = 0
 
     questionList = questions[topicId]
 
     avaliableQuestions = copy.deepcopy(questionList)
-
-
-    print(f"Avaliable questions: [{questionList}]")
 
     generatedQuestions = []
 

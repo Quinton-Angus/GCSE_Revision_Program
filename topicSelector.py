@@ -1,3 +1,4 @@
+import config
 from data import topics
 
 def invalidTopic():
@@ -46,4 +47,7 @@ def selectTopic() :
 
     print()
     ("------------------")
-    return topic
+
+    config.selectedTopic = topic
+
+    return
